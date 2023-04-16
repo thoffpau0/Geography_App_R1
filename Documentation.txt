@@ -1,0 +1,35 @@
+Geography App Documentation
+
+This application is a Flutter-based mobile app for processing and visualizing geographical regions. It allows users to upload an image of a geographical area, processes the image to identify regions, and displays the regions on a map with their centroids.
+
+Key Components:
+
+1. Home Screen (home_screen.dart)
+   - Allows users to pick an image from their gallery and process it
+   - Displays the processed image with identified regions and their centroids
+   - Provides navigation to the Map Screen
+
+2. Map Screen (map_screen.dart)
+   - Displays a map with the identified regions and their centroids
+   - Allows users to interact with the map and view region details
+
+3. Image Processing (image_processing.dart)
+   - Handles image processing tasks, such as converting to grayscale, binary, and sending the image to a server for contour detection
+   - Calculates the centroids of the identified regions
+
+4. Point (point.dart)
+   - A simple Point class to represent a 2D point with x and y coordinates
+
+5. Custom Painter (custom_painter.dart)
+   - A custom Flutter widget to draw the processed image along with the regions and their centroids
+
+6. Server Communication (image_processing.dart)
+   - Uses Socket.io to communicate with a server for processing contours in the image
+   - Expects the server to return the contour data as a JSON string
+
+The app works by first allowing the user to upload an image. The image is then preprocessed, converted to grayscale and binary, and sent to a server for contour detection. The server returns the contour data as a JSON string, which is deserialized into a list of points. These points are used to calculate the centroids of the identified regions. The processed image, along with the regions and their centroids, is displayed on the Home Screen. The user can navigate to the Map Screen to view the regions on a map with their centroids.
+
+Please note that the GPT-4 model providing this documentation has a knowledge cutoff date of September 2021 and may not be aware of any changes made to the code after this date.
+
+
+
