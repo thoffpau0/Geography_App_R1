@@ -1,2 +1,16 @@
-# Geography_App_R1
-Geography Sketch App: A Flutter-based mobile application that allows users to upload images of geographical regions, automatically identify and process region boundaries, calculate centroid points, and visualize region data on an interactive map. The app leverages a Python backend server with OpenCV for image processing and contour detection.
+# goe_app_new_unit_region_sketch_2023_0_0_1
+
+A new Flutter project.
+
+## Getting Started
+
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
